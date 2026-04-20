@@ -43,6 +43,24 @@ header {
     color: var(--white);
 }
 
+.box-btn-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+button, .link-action {
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+
+
+
+
+
 
 
 
