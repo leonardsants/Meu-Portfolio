@@ -1,5 +1,5 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@charset "UTF-8"; /*Define a codificação de caracteres para UTF-8*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap'); /*Importa a fonte "Lato" do Google Fonts com diferentes pesos e estilos*/
 
 
 * {
@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-:root {
+:root { /*Define variáveis de cores para uso em todo o CSS*/
     --white: #FFF;
     --darkblue: #091326; /*cor principal*/
     --teal: #124C59;
@@ -16,46 +16,56 @@
     --mediumturquoise: #1FBFAF;
 }
 
-body {
+body { /*Define o estilo para o corpo da página*/
     background-color: var(--greenwater);
     font-family: "Lato";
     height: 100vh;
 }
 
-header {
-    display: flex;
-    justify-content: space-around;
+header { /*Define o estilo para o cabeçalho da página*/
+    display: flex; /*Usa flexbox para layout do cabeçalho*/
+    justify-content: space-around; /*Distribui os itens do cabeçalho com espaço ao redor*/
+    align-items: center; /*Alinha os itens do cabeçalho verticalmente ao centro*/
+    gap: 1rem; /*Define um espaço de 1rem entre os itens do cabeçalho*/
+    flex-wrap: wrap; /*Permite que os itens do cabeçalho quebrem para a próxima linha se necessário*/
+    padding: .8rem; /*Define o preenchimento interno do cabeçalho*/
+    background-color: var(--darkblue); /*Define a cor de fundo do cabeçalho usando a variável de cor definida anteriormente */
+    min-height: 50px; /*Define a altura mínima do cabeçalho para garantir que ele tenha uma altura adequada mesmo com pouco conteúdo*/
+}
+
+.cv.png { 
+  height:100%; 
+  border-radius: 50%; 
+}
+
+
+nav {
+    display:flex;
+    gap: 2rem;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    padding: .8rem;
-    background-color: var(--darkblue);
-    min-height: 50px;
+    flex-wrap: wrap; 
 }
 
-.cv.png {
-    max-width: 60px;
-    height: 100%;
-}
-
-.nav-links {
-    text-decoration: none;
-    color: var(--white);
-}
-
-.box-btn-actions {
-    display: flex;
-    gap: 1rem;
-}
-
-button, .link-action {
-    padding: .6rem;
-    font-size: .9rem;
-    border-radius: 10px;
-    cursor: pointer;
+.nav-links:hover { /*Define o estilo para os links de navegação*/
+    color: var(--white); 
     transition: .4s;
+    text-decoration: underline;
 }
 
+.box-btn-actions { /*Define o estilo para a caixa de botões de ações*/
+    background-color: transparent;
+    display: flex; 
+    gap: 1rem; 
+}
+
+button, .link-action { /*Define o estilo para os botões e links de ação*/
+    padding: .6rem; 
+    font-size: .9rem; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: .4s; 
+} 
 
 
 
