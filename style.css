@@ -130,7 +130,7 @@ strong {
     width: 100%;
 }
 
-.second-section {
+.second-section, fourth-section {
     background-color: var(--darkcyan);
     display: flex;
     flex-direction: column;
@@ -172,10 +172,25 @@ strong {
 
 .third-section > div {
     display: flex;
-    gap: 4rem;
+    gap: 45rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.thrid-section > div > img {
+    width: 500px;
+    border-radius: 10px;
+}
+.third-section > div > p {
+    max-width: 600px;
+    color: var(--white);
+    text-align: justify;
+}
+
+.third-section > h2 {
+    text-align: center;
+    
 }
 
 
